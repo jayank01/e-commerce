@@ -1,0 +1,34 @@
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/local_Goods?createDatabaseIfNotExist=true
+        username: root
+        password: 12345
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: "jayankvashistha123@gmail.com"
+        password: "shoo hbbw nhtu xcxq"
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+    servlet:
+        multipart:
+            enabled: true
+rsa:
+    private-key: classpath:certs/private.pem
+    public-key: classpath:certs/public.pem
+
+server:
+  port: 9090
+
+stripe:
+    api:
+        key: sk_test_51PjGK6091tHhL6roukUFfTOff6De2JJNjRFNl3PxGldY9ulqqPwG9bJd03R7f05tZ3Yp1YouisFRTyxMPywH1Crg00ayecwpdP
+
